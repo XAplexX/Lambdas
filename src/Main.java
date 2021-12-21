@@ -6,7 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String lines;
         Number results = null;
-        double[] users = null;
+        double[] person = null;
 
         //Lambdas belegen
         CalculationOperation add = (x,y) -> new Number(x.getA() + y.getA(), x.getB() + y.getB());
@@ -30,26 +30,26 @@ public class Main {
                 case "1":
                     running = false;
                     do {
-                        users = numberSelection();
+                        person = numberSelection();
                         chooseOperational();
                         lines = scanner.nextLine();
                         if (lines.equals("1")) {
-                            results = rational.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = rational.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = rational.subtract(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = rational.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = rational.multiply(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = rational.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = rational.divide(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = rational.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             booleans = false;
@@ -62,26 +62,26 @@ public class Main {
                 case "2":
                     running = false;
                     do {
-                        users = numberSelection();
+                        person = numberSelection();
                         chooseOperational();
                         lines = scanner.nextLine();
                         if (lines.equals("1")) {
-                            results = vector.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = vector.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = vector.subtract(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = vector.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = vector.multiply(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = vector.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = vector.divide(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = vector.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
@@ -94,26 +94,26 @@ public class Main {
                 case "3":
                     running = false;
                     do {
-                        users = numberSelection();
+                        person = numberSelection();
                         chooseOperational();
                         lines = scanner.nextLine();
                         if (lines.equals("1")) {
-                            results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
+                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
