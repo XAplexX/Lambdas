@@ -22,9 +22,9 @@ public class Main {
         VectorCalculator vector = new VectorCalculator(add, sub, mul, div);
         ComplexCalculator complex = new ComplexCalculator(add, sub, mul, div);
 
-        boolean bool = true;
+        boolean booleans = true;
         boolean running2;
-        while(bool){
+        while(booleans){
             chooseCalculator();
             line = scanner.nextLine();
             switch (line){
@@ -53,7 +53,7 @@ public class Main {
                             result = rational.divide(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + result.getA());
                             System.out.println("Solution: " + result.getB());
-                            bool = false;
+                            booleans = false;
                         } else if (line.equals("5")) {
                             running2 = true;
                         }
@@ -126,7 +126,7 @@ public class Main {
 
                 case "4":
                     System.out.println("Bye!");
-                    bool = false;
+                    booleans = false;
                     break;
 
                 default:
