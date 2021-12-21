@@ -24,7 +24,7 @@ public class Main {
         boolean booleans = true;
         boolean running2;
         while(booleans){
-            chooseCalculator();
+            chooseCalc();
             lines = scanner.nextLine();
             switch (lines){
                 case "1":
@@ -134,7 +134,7 @@ public class Main {
         }
     }
 
-    private static void chooseCalculator(){
+    private static void chooseCalc(){
         System.out.println("Choose calculator:");
         System.out.println("1 - Relational calculator");
         System.out.println("2 - Vector calculator");
