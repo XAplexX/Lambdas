@@ -9,7 +9,6 @@ public class Main {
         double[] users = null;
 
         //Lambdas belegen
-        //Multiplikation Kreuzweise = Kreuzprodukt
         CalculationOperation add = (x,y) -> new Number(x.getA() + y.getA(), x.getB() + y.getB());
         CalculationOperation sub = (x,y) -> new Number(x.getA() - y.getA(), x.getB() - y.getB());
         //Multiplikation Kreuzweise = Kreuzprodukt

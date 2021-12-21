@@ -15,7 +15,7 @@ public class HalloJavamitForEach {
         for(String str : list){
             System.out.println(str);
         }
-        list.forEach((String s) -> System.out.println(s));
+        list.forEach((String strings) -> System.out.println(strings));
         list.forEach(System.out::print);
 
         NumberTester number = new NumberTester("Tester.csv");
