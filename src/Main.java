@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String lines;
         Number results = null;
         double[] person = null;
@@ -25,14 +25,14 @@ public class Main {
         boolean running;
         while(booleans){
             chooseCalc();
-            lines = scanner.nextLine();
+            lines = sc.nextLine();
             switch (lines){
                 case "1":
                     running = false;
                     do {
                         person = numberSelection();
                         chooseOperational();
-                        lines = scanner.nextLine();
+                        lines = sc.nextLine();
                         if (lines.equals("1")) {
                             results = rational.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
@@ -64,7 +64,7 @@ public class Main {
                     do {
                         person = numberSelection();
                         chooseOperational();
-                        lines = scanner.nextLine();
+                        lines = sc.nextLine();
                         if (lines.equals("1")) {
                             results = vector.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
@@ -96,7 +96,7 @@ public class Main {
                     do {
                         person = numberSelection();
                         chooseOperational();
-                        lines = scanner.nextLine();
+                        lines = sc.nextLine();
                         if (lines.equals("1")) {
                             results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
