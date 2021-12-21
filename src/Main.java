@@ -22,13 +22,13 @@ public class Main {
         ComplexCalculator complex = new ComplexCalculator(add, sub, mul, div);
 
         boolean booleans = true;
-        boolean running2;
+        boolean running;
         while(booleans){
             chooseCalc();
             lines = scanner.nextLine();
             switch (lines){
                 case "1":
-                    running2 = false;
+                    running = false;
                     do {
                         users = numberSelection();
                         chooseOperational();
@@ -37,30 +37,30 @@ public class Main {
                             results = rational.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("2")) {
                             results = rational.subtract(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("3")) {
                             results = rational.multiply(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("4")) {
                             results = rational.divide(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             booleans = false;
                         } else if (lines.equals("5")) {
-                            running2 = true;
+                            running = true;
                         }
-                    }while (running2);
+                    }while (running);
                     break;
 
                 case "2":
-                    running2 = false;
+                    running = false;
                     do {
                         users = numberSelection();
                         chooseOperational();
@@ -69,30 +69,30 @@ public class Main {
                             results = vector.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("2")) {
                             results = vector.subtract(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("3")) {
                             results = vector.multiply(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("4")) {
                             results = vector.divide(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("5")) {
-                            running2 = true;
+                            running = true;
                         }
-                    }while (running2);
+                    }while (running);
                     break;
 
                 case "3":
-                    running2 = false;
+                    running = false;
                     do {
                         users = numberSelection();
                         chooseOperational();
@@ -101,26 +101,26 @@ public class Main {
                             results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("2")) {
                             results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("3")) {
                             results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("4")) {
                             results = complex.add(new Number(users[0], users[1]), new Number(users[2], users[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
-                            running2 = false;
+                            running = false;
                         } else if (lines.equals("5")) {
-                            running2 = true;
+                            running = true;
                         }
-                    }while (running2);
+                    }while (running);
                     break;
 
                 case "4":
