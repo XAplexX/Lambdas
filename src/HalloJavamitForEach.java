@@ -18,7 +18,7 @@ public class HalloJavamitForEach {
         list.forEach((String s) -> System.out.println(s));
         list.forEach(System.out::print);
 
-        NumberTester number = new NumberTester("Tester.csv");
-        number.testFile();
+        NumberTester tester = new NumberTester("Tester.csv");
+        tester.testFile();
     }
 }
