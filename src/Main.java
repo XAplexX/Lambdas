@@ -18,7 +18,7 @@ public class Main {
 
         //Objekte RC, VC, CC
         RationalCalculator rationals = new RationalCalculator(add, sub, mul, div);
-        VectorCalculator vector = new VectorCalculator(add, sub, mul, div);
+        VectorCalculator vectors = new VectorCalculator(add, sub, mul, div);
         ComplexCalculator complex = new ComplexCalculator(add, sub, mul, div);
 
         boolean booleans = true;
@@ -66,22 +66,22 @@ public class Main {
                         chooseOperational();
                         lines = sc.nextLine();
                         if (lines.equals("1")) {
-                            results = vector.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = vectors.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = vector.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = vectors.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = vector.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = vectors.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = vector.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = vectors.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
