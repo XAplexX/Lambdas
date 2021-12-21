@@ -17,7 +17,7 @@ public class Main {
         CalculationOperation div = (x,y) -> new Number(x.getA() / y.getA(), x.getB() / y.getB());
 
         //Objekte RC, VC, CC
-        RationalCalculator rational = new RationalCalculator(add, sub, mul, div);
+        RationalCalculator rationals = new RationalCalculator(add, sub, mul, div);
         VectorCalculator vector = new VectorCalculator(add, sub, mul, div);
         ComplexCalculator complex = new ComplexCalculator(add, sub, mul, div);
 
@@ -34,22 +34,22 @@ public class Main {
                         chooseOperational();
                         lines = sc.nextLine();
                         if (lines.equals("1")) {
-                            results = rational.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = rationals.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = rational.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = rationals.subtract(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = rational.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = rationals.multiply(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = rational.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = rationals.divide(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             booleans = false;
