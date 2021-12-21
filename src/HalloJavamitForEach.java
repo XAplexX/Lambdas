@@ -9,7 +9,7 @@ public class HalloJavamitForEach {
         list = new ArrayList<>();
         list.add("Hallo");
         list.add("Java");
-        list.add("Programmieren");
+        list.add("Strings");
         list.add("Welt");
 
         for(String str : list){
@@ -18,7 +18,7 @@ public class HalloJavamitForEach {
         list.forEach((String s) -> System.out.println(s));
         list.forEach(System.out::print);
 
-        NumberTester tester = new NumberTester("Tester.csv");
-        tester.testFile();
+        NumberTester number = new NumberTester("Tester.csv");
+        number.testFile();
     }
 }
