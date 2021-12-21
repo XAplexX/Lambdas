@@ -12,8 +12,8 @@ public class HalloJavamitForEach {
         list.add("Strings");
         list.add("Welt");
 
-        for(String str : list){
-            System.out.println(str);
+        for(String printstr : list){
+            System.out.println(printstr);
         }
         list.forEach((String strings) -> System.out.println(strings));
         list.forEach(System.out::print);
