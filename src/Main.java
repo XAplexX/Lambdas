@@ -19,7 +19,7 @@ public class Main {
         //Objekte RC, VC, CC
         RationalCalculator rationals = new RationalCalculator(add, sub, mul, div);
         VectorCalculator vectors = new VectorCalculator(add, sub, mul, div);
-        ComplexCalculator complex = new ComplexCalculator(add, sub, mul, div);
+        ComplexCalculator complexes = new ComplexCalculator(add, sub, mul, div);
 
         boolean booleans = true;
         boolean running;
@@ -98,22 +98,22 @@ public class Main {
                         chooseOperational();
                         lines = sc.nextLine();
                         if (lines.equals("1")) {
-                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = complexes.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("2")) {
-                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = complexes.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("3")) {
-                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = complexes.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
                         } else if (lines.equals("4")) {
-                            results = complex.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
+                            results = complexes.add(new Number(person[0], person[1]), new Number(person[2], person[3]));
                             System.out.println("Solution: " + results.getA());
                             System.out.println("Solution: " + results.getB());
                             running = false;
